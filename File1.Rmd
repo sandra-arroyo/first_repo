@@ -9,13 +9,20 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+This is just a test of my first attempts using GitHub
 
 ```{r cars}
 summary(cars)
 ```
 
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r, test-plot}
+plot(cars, col = "red", xlab = "speed (mph)", ylab = "distance (miles)")
 ```
 
+A summary of the data frame is given below
+
+```{r, cars-summary}
+library(knitr)
+kable(summary(cars))
+```
